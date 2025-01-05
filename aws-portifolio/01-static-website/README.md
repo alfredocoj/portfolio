@@ -4,7 +4,18 @@
 
 This project demonstrates how to provision resources for a static website using AWS services such as Route 53, CloudFront, Lambda@Edge, and S3. The goal is to create a highly available, scalable, and secure static website hosted on AWS. This project serves as a portfolio to showcase my knowledge and skills in AWS infrastructure as code (IaC) using Terraform.
 
+The following diagram illustrates the available triggers for a CloudFront distribution
+
 ![Static website design architectural model.](./img/project01.png)
+
+Here is how the process works:
+
+1. Viewer requests website `www.example.com`.
+2, Requets DNS service for Route 53.
+3. If the object is cached already, CloudFront returns the object from the cache to the viewer, otherwise it moves on to step 4.
+4. CloudFront requests the object from the origin, in this case an S3 bucket.
+5. S3 returns the object, which in turn causes CloudFront to trigger the origin response event.
+6. Our Add Security Headers Lambda function triggers, and the resulting output is cached and served by CloudFront.
 
 ## Project Structure
 

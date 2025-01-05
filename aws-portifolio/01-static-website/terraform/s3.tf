@@ -27,7 +27,7 @@ resource "aws_s3_bucket_policy" "root_domain_policy" {
 
 data "aws_iam_policy_document" "root_domain_policy_doc" {
   statement {
-    actions   = ["s3:GetObject","s3:ListBucket"]
+    actions   = ["s3:GetObject"]
     resources = ["arn:aws:s3:::${var.root_domain_bucket_name}/*"]
     principals {
       type        = "AWS"
@@ -61,7 +61,7 @@ resource "aws_s3_bucket_policy" "subdomain_policy" {
 
 data "aws_iam_policy_document" "subdomain_domain_policy_doc" {
   statement {
-    actions   = ["s3:GetObject","s3:ListBucket"]
+    actions   = ["s3:GetObject"]
     resources = ["arn:aws:s3:::${var.subdomain_bucket_name}/*"]
     principals {
       type        = "AWS"

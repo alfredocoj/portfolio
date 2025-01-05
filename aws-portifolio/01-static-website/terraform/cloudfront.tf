@@ -54,11 +54,3 @@ resource "aws_lambda_function" "add_security_headers" {
   runtime          = "nodejs14.x"
   source_code_hash = filebase64sha256("lambda_function.zip")
 }
-
-resource "aws_lambda_permission" "allow_cloudfront" {
-  statement_id  = "AllowExecutionFromCloudFront"
-  action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.add_security_headers.function_name
-  principal     = "edgelambda.amazonaws.com"
-  source_arn    = aws_cloudfront_distribution.cdn.arn
-}

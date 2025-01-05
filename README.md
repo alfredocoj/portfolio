@@ -5,9 +5,8 @@ A comprehensive portfolio showcasing my expertise in AWS and Azure cloud platfor
 This repository contains a collection of projects that demonstrate my experience and skills in cloud computing with AWS and Azure, as well as my proficiency in DevOps practices using CI/CD tools such as Jenkins, GitLab, ArgoCD, and SonarQube.
 
 ## Projects
-### 1. AWS Cloud Solutions
-- **1.1 Project Name:** Static Website Provisioning with AWS
-- **Description:** This project demonstrates how to provision resources for a static website using AWS services such as Route 53, CloudFront, Lambda@Edge, and S3. The goal is to create a highly available, scalable, and secure static website hosted on AWS. This project serves as a portfolio to showcase my knowledge and skills in AWS infrastructure as code (IaC) using Terraform.
+### 01 - Static Website Provisioning with AWS
+This project demonstrates how to provision resources for a static website using AWS services such as Route 53, CloudFront, Lambda@Edge, and S3. The goal is to create a highly available, scalable, and secure static website hosted on AWS. This project serves as a portfolio to showcase my knowledge and skills in AWS infrastructure as code (IaC) using Terraform.
 
 ### 2. Azure Cloud Solutions
 - **Project Name:** ...

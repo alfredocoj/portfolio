@@ -4,6 +4,8 @@
 
 This project demonstrates how to provision resources for a static website using AWS services such as Route 53, CloudFront, Lambda@Edge, and S3. The goal is to create a highly available, scalable, and secure static website hosted on AWS. This project serves as a portfolio to showcase my knowledge and skills in AWS infrastructure as code (IaC) using Terraform.
 
+![Static website design architectural model.](./img/project01.png)
+
 ## Project Structure
 
 The project is organized into several Terraform configuration files, each responsible for different aspects of the infrastructure:
@@ -66,5 +68,9 @@ Feel free to explore the code and adapt it to your own needs. If you have any qu
 
 ---
 
+
 **Author**: Alfredo Costa Oliveira Junior
-**Date**: 01-04-2025
+
+**E-mail**: [alfredo.coj@gmail.com](mailto:alfredo.coj@gmail.com)
+
+**Date**: 01-05-2025

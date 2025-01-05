@@ -1,5 +1,9 @@
 resource "aws_s3_bucket" "root_domain_bucket" {
   bucket = var.root_domain_bucket_name
+}
+
+resource "aws_s3_bucket_acl" "root_domain_bucket_acl" {
+  bucket = aws_s3_bucket.root_domain_bucket.id
   acl    = "public-read"
 
 }
@@ -18,16 +22,18 @@ resource "aws_s3_bucket_website_configuration" "root_domain_bucket_config" {
 
 resource "aws_s3_bucket_policy" "root_domain_policy" {
   bucket = aws_s3_bucket.root_domain_bucket.id
+  policy = data.aws_iam_policy_document.root_domain_policy_doc.json
+}
 
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [{
-      Effect    = "Allow"
-      Principal = "*"
-      Action    = "s3:GetObject"
-      Resource  = "arn:aws:s3:::example.com/*"
-    }]
-  })
+data "aws_iam_policy_document" "root_domain_policy_doc" {
+  statement {
+    actions   = ["s3:GetObject","s3:ListBucket"]
+    resources = ["arn:aws:s3:::${var.root_domain_bucket_name}/*"]
+    principals {
+      type        = "AWS"
+      identifiers = ["13356567890"]
+    }
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "root_domain_block" {
@@ -41,21 +47,27 @@ resource "aws_s3_bucket_public_access_block" "root_domain_block" {
 
 resource "aws_s3_bucket" "subdomain_bucket" {
   bucket = var.subdomain_bucket_name
+}
+
+resource "aws_s3_bucket_acl" "subdomain_bucket_acl" {
+  bucket = aws_s3_bucket.subdomain_bucket.id
   acl    = "public-read"
 }
 
 resource "aws_s3_bucket_policy" "subdomain_policy" {
   bucket = aws_s3_bucket.subdomain_bucket.id
+  policy = data.aws_iam_policy_document.subdomain_domain_policy_doc.json
+}
 
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [{
-      Effect    = "Allow"
-      Principal = "*"
-      Action    = "s3:GetObject"
-      Resource  = "arn:aws:s3:::www.example.com/*"
-    }]
-  })
+data "aws_iam_policy_document" "subdomain_domain_policy_doc" {
+  statement {
+    actions   = ["s3:GetObject","s3:ListBucket"]
+    resources = ["arn:aws:s3:::${var.subdomain_bucket_name}/*"]
+    principals {
+      type        = "AWS"
+      identifiers = ["13356567124"]
+    }
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "subdomain_block" {

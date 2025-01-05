@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "main" {
-  name = "example.com"
+  name = var.domain_name
 }
 
 resource "aws_route53_record" "www" {

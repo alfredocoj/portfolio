@@ -1,0 +1,1869 @@
+{
+	"rabbit_version": "3.8.9",
+	"rabbitmq_version": "3.8.9",
+	"product_name": "RabbitMQ",
+	"product_version": "3.8.9",
+	"users": [
+		{
+			"name": "devops",
+			"password_hash": "mbkk4DsRtDPC534Lok51SGaeQE4SQntfkFirBaxpJgF41HwV",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "alfredo",
+			"password_hash": "Z3EJyhi0Lndfx4RP9H0ZYtqzFBCFvD8ofeOjCfVIesz0Hcl6",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "financeiro",
+			"password_hash": "9JBzHgCLXr2f1p+EqDyrcurS9zFa18Vv1sYw3U5shi4VBUhP",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "monitoring"
+		},
+		{
+			"name": "contabil",
+			"password_hash": "QDrJpYVTOHh4d+oO6DU4w9I6V9iPrTWjACIJTsqYDa/RqfPd",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "monitoring"
+		},
+		{
+			"name": "luizmiranda",
+			"password_hash": "NCKeKztr0alfJYOaLw0S7cvoNtvhN9uDnYksEDJ25CRZN30/",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "pdv",
+			"password_hash": "LNveeD2g3lOAnYh0nWajHqsFDNQh+nHXxK2mn6dPZUcEHp/s",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "monitoring"
+		},
+		{
+			"name": "engenharia",
+			"password_hash": "nQvV5N0WVXSk63pvjwL1pP2XPSZoKQuJyec1sCuL7fRYozgx",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "management"
+		},
+		{
+			"name": "denner",
+			"password_hash": "r/0mwjyiSxao39/KpzsTwb+TZ4nomhjE2mFE86e7spO/K9om",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "deurivaldo",
+			"password_hash": "gSdspGe8urYoAICkZYR6jz5LzPLQomLdMJDmWv+S2vJZES8H",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "admin",
+			"password_hash": "fhHw+uCcNKM0SXsx42wQCAHF4Q/HytePBOiiPKTj4/5we4Ms",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "anacouto",
+			"password_hash": "9LjuVSfEjMK9o7rfaahzfoL+IaeY6TVYRl40DaFpt0hmuoPU",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "guest",
+			"password_hash": "Xb3iq17rRICaFe1sbAoR0yaN3hUxlSc6iUwgBW7Jzu1ZJAjJ",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "projetos",
+			"password_hash": "IN7trFCNz8+CbfYwaCYe11JZ8LgIwunBvrq5OIRI/6uTaQEn",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "monitoring"
+		},
+		{
+			"name": "estatistica",
+			"password_hash": "Za/EVhrlPfGPwSlLjS8HrBo1xjsAS+k2y5ytqubrYIYVaHIN",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "monitoring"
+		},
+		{
+			"name": "josemoura",
+			"password_hash": "8tWyMf+EZN50MTuFG8pzf0E6YR6j6J33x+RtIFDo5YhYxNWk",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "administrator"
+		},
+		{
+			"name": "edw",
+			"password_hash": "d236uch76mvD9zWiTIujJ9Js3Bd/TMiqvWasMd0IvQQXj+CA",
+			"hashing_algorithm": "rabbit_password_hashing_sha256",
+			"tags": "monitoring"
+		}
+	],
+	"vhosts": [
+		{
+			"name": "/edw"
+		},
+		{
+			"name": "/financeiro"
+		},
+		{
+			"name": "/engenharia"
+		},
+		{
+			"name": "/pdv"
+		},
+		{
+			"name": "/"
+		},
+		{
+			"name": "/contabil"
+		},
+		{
+			"name": "/estatistica"
+		},
+		{
+			"name": "/projetos"
+		}
+	],
+	"permissions": [
+		{
+			"user": "devops",
+			"vhost": "/edw",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/edw",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/contabil",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/estatistica",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "financeiro",
+			"vhost": "/financeiro",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/engenharia",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "contabil",
+			"vhost": "/contabil",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/projetos",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/financeiro",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "pdv",
+			"vhost": "/pdv",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "estatistica",
+			"vhost": "/estatistica",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "deurivaldo",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/pdv",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/estatistica",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "projetos",
+			"vhost": "/projetos",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "alfredo",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "anacouto",
+			"vhost": "/pdv",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "josemoura",
+			"vhost": "/pdv",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/contabil",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "anacouto",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/projetos",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "edw",
+			"vhost": "/edw",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "deurivaldo",
+			"vhost": "/edw",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "josemoura",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/pdv",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/engenharia",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "deurivaldo",
+			"vhost": "/pdv",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "luizmiranda",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "alfredo",
+			"vhost": "/contabil",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "denner",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "devops",
+			"vhost": "/financeiro",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "engenharia",
+			"vhost": "/engenharia",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "estatistica",
+			"vhost": "/",
+			"configure": ".*",
+			"write": ".*",
+			"read": ".*"
+		}
+	],
+	"topic_permissions": [
+		{
+			"user": "deurivaldo",
+			"vhost": "/",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "edw",
+			"vhost": "/edw",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "estatistica",
+			"vhost": "/",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "estatistica",
+			"vhost": "/estatistica",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "pdv",
+			"vhost": "/pdv",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "admin",
+			"vhost": "/pdv",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		},
+		{
+			"user": "engenharia",
+			"vhost": "/engenharia",
+			"exchange": "",
+			"write": ".*",
+			"read": ".*"
+		}
+	],
+	"parameters": [],
+	"global_parameters": [
+		{
+			"name": "cluster_name",
+			"value": "rabbit@rabbit-hom-s1-n01"
+		},
+		{
+			"name": "internal_cluster_id",
+			"value": "rabbitmq-cluster-id-UKZFJ0j1xqLhb7kyDaFPcw"
+		}
+	],
+	"policies": [
+		{
+			"vhost": "/pdv",
+			"name": "ha-all",
+			"pattern": ".",
+			"apply-to": "all",
+			"definition": {
+				"ha-mode": "exactly",
+				"ha-params": 4,
+				"ha-sync-mode": "automatic"
+			},
+			"priority": 0
+		},
+		{
+			"vhost": "/",
+			"name": "ha-all",
+			"pattern": ".",
+			"apply-to": "all",
+			"definition": {
+				"ha-mode": "exactly",
+				"ha-params": 4,
+				"ha-sync-mode": "automatic"
+			},
+			"priority": 0
+		},
+		{
+			"vhost": "/financeiro",
+			"name": "ha-all",
+			"pattern": ".",
+			"apply-to": "all",
+			"definition": {
+				"ha-mode": "exactly",
+				"ha-params": 4,
+				"ha-sync-mode": "automatic"
+			},
+			"priority": 0
+		}
+	],
+	"queues": [
+		{
+			"name": "edw.airflow.nifi.extract.es12pedido.input.queue",
+			"vhost": "/edw",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "classic"
+			}
+		},
+		{
+			"name": "edw.airflow.nifi.extract.es12pedido.output.queue",
+			"vhost": "/edw",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "classic"
+			}
+		},
+		{
+			"name": "br.com.ithappens.agendamento.automatico.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.agendamento.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.agendamento.automatico.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.receber.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.vinculo.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.vinculo.receber.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.agendamento.encontro.contas.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.agendamento.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.agendamento.encontro.contas.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.pagar.reprocessar.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.vinculo.exchange.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.pagar.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.vinculo.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.vinculo.pagar.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.baixa.encontro.contas.queue.dl",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.baixa.encontro.contas.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.baixa.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.baixa.encontro.contas.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.agendamento.encontro.contas.queue.dl",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.receber.queue.dl",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.receber.reprocessar.queue",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"queue-mode": "lazy",
+				"x-dead-letter-exchange": "br.com.ithappens.vinculo.exchange.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.pagar.queue.dl",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.baixa.automatico.queue.dl",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.agendamento.automatico.queue.dl",
+			"vhost": "/financeiro",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.integracao.auditoria.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.processar.bonificacao.crm.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.ithappens.cupom-online.deadletter-exchange",
+				"x-dead-letter-routing-key": "br.com.ithappens.cupom-online.deadletter-routingkey"
+			}
+		},
+		{
+			"name": "br.com.pulse.carga.mgv.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.campanha.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.mateusmais.campanha.exchange",
+				"x-dead-letter-routing-key": "br.com.pulse.mateusmais.campanha.routingkey",
+				"x-message-ttl": 300000
+			}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.campanha.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.mateusmais.campanha.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.mateusmais.campanha.routingkey.dl"
+			}
+		},
+		{
+			"name": "br.com.pulse.integracao.bling.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.integracao.mateusmais.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.faturamento.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.mateusmais.faturamento.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.mateusmais.faturamento.routingkey.dl"
+			}
+		},
+		{
+			"name": "br.com.ithappens.cupom-online.deadletter-queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.integracao.crm.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.carga-preco.mgv.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.carga-preco.mgv.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.carga-preco.mgv.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.carga.mgv.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.carga.mgv.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.carga.mgv.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.faturamento.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.mateusmais.faturamento.exchange",
+				"x-dead-letter-routing-key": "br.com.pulse.mateusmais.faturamento.routingkey",
+				"x-message-ttl": 300000
+			}
+		},
+		{
+			"name": "br.com.pulse.integracao.bling.queue.teste",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.integracao.bling.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.integracao.bling.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.bonificacao.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.mateusmais.bonificacao.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.mateusmais.bonificacao.routingkey.dl"
+			}
+		},
+		{
+			"name": "br.com.pulse.integracao.mateusmais.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.integracao.mateusmais.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.integracao.mateusmais.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.integracao.bling.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.integracao.bling.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.pulse.integracao.bling.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.bonificacao.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.pulse.mateusmais.bonificacao.exchange",
+				"x-dead-letter-routing-key": "br.com.pulse.mateusmais.bonificacao.routingkey",
+				"x-message-ttl": 300000
+			}
+		},
+		{
+			"name": "br.com.pulse.carga-preco.mgv.queue.dl",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "br.com.ithappens.integracao.crm.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.ithappens.integracao.crm.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.integracao.crm.routingkey.dl"
+			}
+		},
+		{
+			"name": "br.com.ithappens.integracao.auditoria.queue",
+			"vhost": "/pdv",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.ithappens.integracao.auditoria.exchange.dl",
+				"x-dead-letter-routing-key": "br.com.ithappens.integracao.auditoria.routingkey.dl",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "fiscal.nfce.ready.cancelado",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "br.com.ithappens.nfce.async.monitoring-retry",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.ithappens.exchange.nfce.async.monitoring",
+				"x-dead-letter-routing-key": "br.com.ithappens.nfce.async.monitoring.raise",
+				"x-message-ttl": 600000,
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.upload",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "fiscal.nfce.exchange-retry",
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.wait.cancelado-retry",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "fiscal.nfce.exchange",
+				"x-message-ttl": 30000,
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.upload-retry",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "fiscal.nfce.exchange",
+				"x-message-ttl": 30000,
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.raw",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.wait.cancelado",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "fiscal.nfce.exchange-retry",
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "br.com.ithappens.nfce.async.monitoring",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "br.com.ithappens.exchange.nfce.async.monitoring",
+				"x-dead-letter-routing-key": "br.com.ithappens.nfce.async.monitoring.kill",
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.gmcore.allowed",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.fix.produto",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "br.com.ithappens.nfce.async.lazy.processor",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "fiscal.nfce.transformed",
+			"vhost": "/contabil",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-mode": "lazy"
+			}
+		},
+		{
+			"name": "datascience.rh.surv.queue",
+			"vhost": "/estatistica",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "datascience.rh.prevpaga.queue",
+			"vhost": "/estatistica",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {}
+		},
+		{
+			"name": "titulos-contratos.titulos.criados.queue",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "contrato-fornecedor.contrato.reprocessar-titulos.queue",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "titulos-contratos.titulos.criados.queue1",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+				"x-dead-letter-routing-key": "contrato-fornecedor.contrato.reprocessar-titulos.routingkey",
+				"x-queue-type": "classic"
+			}
+		},
+		{
+			"name": "contrato-fornecedor.contrato.gerar-titulos.queue",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+				"x-dead-letter-routing-key": "contrato-fornecedor.contrato.reprocessar-titulos.routingkey",
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "dev.contrato-fornecedor.contrato.gerar-titulos.queue",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-dead-letter-exchange": "contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+				"x-dead-letter-routing-key": "contrato-fornecedor.contrato.reprocessar-titulos.routingkey",
+				"x-delivery-limit": 5,
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "dev.contrato-fornecedor.contrato.reprocessar-titulos.queue",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		},
+		{
+			"name": "dev.titulos-contratos.titulos.criados.queue",
+			"vhost": "/projetos",
+			"durable": true,
+			"auto_delete": false,
+			"arguments": {
+				"x-queue-type": "quorum"
+			}
+		}
+	],
+	"exchanges": [
+		{
+			"name": "myExchange",
+			"vhost": "/edw",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.baixa.exchange.dl",
+			"vhost": "/financeiro",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.baixa.exchange",
+			"vhost": "/financeiro",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.exchange",
+			"vhost": "/financeiro",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.agendamento.exchange.dl",
+			"vhost": "/financeiro",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.vinculo.exchange.dl",
+			"vhost": "/financeiro",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.agendamento.exchange",
+			"vhost": "/financeiro",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.faturamento.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.integracao.auditoria.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.integracao.crm.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.campanha.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.carga.mgv.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.integracao.auditoria.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.integracao.mateusmais.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.carga-preco.mgv.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.integracao.mateusmais.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.carga.mgv.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.integracao.bling.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.carga-preco.mgv.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.campanha.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.cupom-online.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.faturamento.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.integracao.bling.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.bonificacao.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.mateusmais.bonificacao.exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.integracao.crm.exchange.dl",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.pulse.integracao.bling.exchange.teste",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.cupom-online.deadletter-exchange",
+			"vhost": "/pdv",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "fiscal.nfce.exchange-retry",
+			"vhost": "/contabil",
+			"type": "topic",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"type": "topic",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.exchange.nfce.async.processor",
+			"vhost": "/contabil",
+			"type": "topic",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "br.com.ithappens.exchange.nfce.async.monitoring",
+			"vhost": "/contabil",
+			"type": "topic",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "datascience.rh.surv.exchange",
+			"vhost": "/estatistica",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "datascience.rh.prevpaga.exchange",
+			"vhost": "/estatistica",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "dev.contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "dev.contrato-fornecedor.contrato.gerar-titulos.exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "dev.titulos-contratos.titulos.criados.exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "contrato-fornecedor.contrato.gerar-titulos.exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "titulos-contratos.titulos.criados.exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		},
+		{
+			"name": "direct-exchange",
+			"vhost": "/projetos",
+			"type": "direct",
+			"durable": true,
+			"auto_delete": false,
+			"internal": false,
+			"arguments": {}
+		}
+	],
+	"bindings": [
+		{
+			"source": "myExchange",
+			"vhost": "/edw",
+			"destination": "edw.airflow.nifi.extract.es12pedido.output.queue",
+			"destination_type": "queue",
+			"routing_key": "edw.airflow.nifi.extract.es12pedido.output.queue",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.agendamento.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.agendamento.automatico.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.agendamento.automatico.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.agendamento.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.agendamento.encontro.contas.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.agendamento.encontro.contas.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.agendamento.exchange.dl",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.agendamento.automatico.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.agendamento.automatico.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.agendamento.exchange.dl",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.agendamento.encontro.contas.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.agendamento.encontro.contas.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.baixa.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.baixa.encontro.contas.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.baixa.encontro.contas.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.baixa.exchange.dl",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.baixa.automatico.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.baixa.automatico.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.baixa.exchange.dl",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.baixa.encontro.contas.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.baixa.encontro.contas.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.vinculo.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.vinculo.pagar.reprocessar.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.vinculo.pagar.reprocessar.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.vinculo.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.vinculo.pagar.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.vinculo.pagar.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.vinculo.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.vinculo.receber.reprocessar.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.vinculo.receber.reprocessar.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.vinculo.exchange",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.vinculo.receber.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.vinculo.receber.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.vinculo.exchange.dl",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.vinculo.pagar.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.vinculo.pagar.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.vinculo.exchange.dl",
+			"vhost": "/financeiro",
+			"destination": "br.com.ithappens.vinculo.receber.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.vinculo.receber.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.cupom-online.deadletter-exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.ithappens.cupom-online.deadletter-queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.cupom-online.deadletter-routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.cupom-online.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.ithappens.processar.bonificacao.crm.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.processar.bonificacao.crm.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.integracao.auditoria.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.ithappens.integracao.auditoria.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.integracao.auditoria.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.integracao.auditoria.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.ithappens.integracao.auditoria.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.integracao.auditoria.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.integracao.crm.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.ithappens.integracao.crm.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.integracao.crm.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.integracao.crm.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.ithappens.integracao.crm.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.integracao.crm.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.carga-preco.mgv.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.carga-preco.mgv.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.carga-preco.mgv.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.carga-preco.mgv.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.carga-preco.mgv.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.carga-preco.mgv.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.carga.mgv.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.carga.mgv.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.carga.mgv.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.carga.mgv.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.carga.mgv.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.carga.mgv.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.bling.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.bling.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.bling.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.bling.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.bling.queue.teste",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.bling.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.bling.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.bling.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.Bling.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.bling.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.bling.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.bling.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.bling.exchange.teste",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.bling.queue.teste",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.bling.routingkey.teste",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.mateusmais.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.mateusmais.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.mateusmais.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.integracao.mateusmais.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.integracao.mateusmais.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.integracao.mateusmais.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.mateusmais.bonificacao.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.mateusmais.bonificacao.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.mateusmais.bonificacao.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.mateusmais.bonificacao.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.mateusmais.bonificacao.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.mateusmais.bonificacao.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.mateusmais.campanha.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.mateusmais.campanha.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.mateusmais.campanha.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.mateusmais.campanha.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.mateusmais.campanha.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.mateusmais.campanha.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.mateusmais.faturamento.exchange",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.mateusmais.faturamento.queue",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.mateusmais.faturamento.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.pulse.mateusmais.faturamento.exchange.dl",
+			"vhost": "/pdv",
+			"destination": "br.com.pulse.mateusmais.faturamento.queue.dl",
+			"destination_type": "queue",
+			"routing_key": "br.com.pulse.mateusmais.faturamento.routingkey.dl",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.exchange.nfce.async.monitoring",
+			"vhost": "/contabil",
+			"destination": "br.com.ithappens.nfce.async.monitoring-retry",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.nfce.async.monitoring.kill",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.exchange.nfce.async.monitoring",
+			"vhost": "/contabil",
+			"destination": "br.com.ithappens.nfce.async.monitoring",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.nfce.async.monitoring.raise",
+			"arguments": {}
+		},
+		{
+			"source": "br.com.ithappens.exchange.nfce.async.processor",
+			"vhost": "/contabil",
+			"destination": "br.com.ithappens.nfce.async.lazy.processor",
+			"destination_type": "queue",
+			"routing_key": "br.com.ithappens.nfce.async.lazy.processor",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.fix.produto",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.fix.produto",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.gmcore.allowed",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.gmcore.allowed",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.raw",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.raw",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.ready.cancelado",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.ready.cancelado",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.transformed",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.transformed",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.upload",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.upload",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.wait.cancelado",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.wait.cancelado",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange-retry",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.upload-retry",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.upload",
+			"arguments": {}
+		},
+		{
+			"source": "fiscal.nfce.exchange-retry",
+			"vhost": "/contabil",
+			"destination": "fiscal.nfce.wait.cancelado-retry",
+			"destination_type": "queue",
+			"routing_key": "fiscal.nfce.wait.cancelado",
+			"arguments": {}
+		},
+		{
+			"source": "datascience.rh.prevpaga.exchange",
+			"vhost": "/estatistica",
+			"destination": "datascience.rh.prevpaga.queue",
+			"destination_type": "queue",
+			"routing_key": "datascience.rh.prevpaga",
+			"arguments": {}
+		},
+		{
+			"source": "datascience.rh.surv.exchange",
+			"vhost": "/estatistica",
+			"destination": "datascience.rh.surv.queue",
+			"destination_type": "queue",
+			"routing_key": "datascience.rh.surv",
+			"arguments": {}
+		},
+		{
+			"source": "contrato-fornecedor.contrato.gerar-titulos.exchange",
+			"vhost": "/projetos",
+			"destination": "contrato-fornecedor.contrato.gerar-titulos.queue",
+			"destination_type": "queue",
+			"routing_key": "contrato-fornecedor.contrato.gerar-titulos.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+			"vhost": "/projetos",
+			"destination": "contrato-fornecedor.contrato.reprocessar-titulos.queue",
+			"destination_type": "queue",
+			"routing_key": "contrato-fornecedor.contrato.reprocessar-titulos.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "dev.contrato-fornecedor.contrato.gerar-titulos.exchange",
+			"vhost": "/projetos",
+			"destination": "dev.contrato-fornecedor.contrato.gerar-titulos.queue",
+			"destination_type": "queue",
+			"routing_key": "contrato-fornecedor.contrato.gerar-titulos.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "dev.contrato-fornecedor.contrato.reprocessar-titulos.exchange",
+			"vhost": "/projetos",
+			"destination": "dev.contrato-fornecedor.contrato.reprocessar-titulos.queue",
+			"destination_type": "queue",
+			"routing_key": "dev.contrato-fornecedor.contrato.reprocessar-titulos.routingkey\t",
+			"arguments": {}
+		},
+		{
+			"source": "dev.titulos-contratos.titulos.criados.exchange",
+			"vhost": "/projetos",
+			"destination": "dev.titulos-contratos.titulos.criados.queue",
+			"destination_type": "queue",
+			"routing_key": "dev.titulos-contratos.titulos.criados.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "titulos-contratos.titulos.criados.exchange",
+			"vhost": "/projetos",
+			"destination": "dev.titulos-contratos.titulos.criados.queue",
+			"destination_type": "queue",
+			"routing_key": "titulos-contratos.titulos.criados.routingkey",
+			"arguments": {}
+		},
+		{
+			"source": "titulos-contratos.titulos.criados.exchange",
+			"vhost": "/projetos",
+			"destination": "titulos-contratos.titulos.criados.queue",
+			"destination_type": "queue",
+			"routing_key": "titulos-contratos.titulos.criados.routingkey",
+			"arguments": {}
+		}
+	]
+}

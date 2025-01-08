@@ -5,14 +5,15 @@ Welcome to my DevOps repository! This repository contains a collection of projec
 ## Projects Overview
 
 ### CI/CD Tools
-- **Project 1**: Integration of Jenkins with GitHub for automated builds and deployments.
-- **Project 2**: Setting up a CI/CD pipeline using GitLab CI/CD.
-- **Project 3**: Implementing a CI/CD workflow with CircleCI and Docker.
+- **Project 1**: .
+- **Project 2**: .
+- **Project 3**: .
 
 ### Disaster Recovery
-- **Project 4**: Creating a disaster recovery plan for a cloud-based application.
-- **Project 5**: Automating backup and restore processes.
-- **Project 6**: Implementing a multi-region failover strategy with AWS.
+- **Project 4**: Automating backup strategy for tools as Jenkins and RabbitMQ.
+- **Project 5**: .
+- **Project 6**: .
+- **Project 7**: .
 
 ## Getting Started
 

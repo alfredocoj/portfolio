@@ -11,11 +11,11 @@ The following diagram illustrates the architectural model:
 Here is how the process works:
 
 1. Viewer requests website `www.example.com`.
-2, Requets DNS service for Route 53.
-3. If the object is cached already, CloudFront returns the object from the cache to the viewer, otherwise it moves on to step 4.
-4. CloudFront requests the object from the origin, in this case an S3 bucket.
-5. S3 returns the object, which in turn causes CloudFront to trigger the origin response event.
-6. Our Add Security Headers Lambda function triggers, and the resulting output is cached and served by CloudFront.
+2. The request is routed through Azure Front Door.
+3. If the object is cached already, Azure Front Door returns the object from the cache to the viewer, otherwise it moves on to step 4.
+4. Azure Front Door requests the object from the origin, in this case, an Azure Storage Account.
+5. The Storage Account returns the object, which in turn causes Azure Front Door to trigger the origin response event.
+6. The resulting output is cached and served by Azure Front Door.
 
 ## Project Structure
 
@@ -34,50 +34,43 @@ terraform/
         └── outputs.tf
 ```
 
-### File Descriptions
-
 - **main.tf**: The main configuration file that includes the overall setup and orchestration of resources.
 - **variables.tf**: Defines all the variables used in the project, allowing for easy customization and reusability.
 - **outputs.tf**: Specifies the outputs of the Terraform run, providing important information about the created resources.
-- **providers.tf**: Configures the providers (e.g., AWS) used in the project.
-- **s3.tf**: Contains the configuration for the S3 buckets used to host the static website.
-- **cloudfront.tf**: Contains the configuration for the CloudFront distribution used to serve the static website.
+- **providers.tf**: Configures the providers (e.g., Azure) used in the project.
+- **storage_account.tf**: Contains the configuration for the Azure Storage Account used to host the static website.
+- **front_door.tf**: Contains the configuration for the Azure Front Door distribution used to serve the static website.
 - **terraform.tfvars**: Provides the values for the variables defined in `variables.tf`.
 
 ## Resources Provisioned
 
-### S3 Buckets
+### Azure Storage Account
 
-- **Root Domain Bucket**: Hosts the static website content.
-- **Subdomain Bucket**: Optionally hosts content for a subdomain.
+- **Root Domain Storage**: Hosts the static website content.
+- **Subdomain Storage**: Optionally hosts content for a subdomain.
 
-### CloudFront Distribution
+### Azure Front Door
 
 - **CDN**: Distributes the static website content globally with low latency and high transfer speeds.
 
-### Route 53
+### Azure DNS
 
 - **DNS**: Manages the DNS records for the domain and subdomain.
-
-### Lambda@Edge
-
-- **Permissions**: Configures Lambda@Edge permissions for custom logic at the edge locations.
 
 ## Usage
 
 1. **Install Terraform**: Ensure you have Terraform installed on your machine.
-2. **Configure AWS CLI**: Set up your AWS CLI with the necessary credentials.
+2. **Configure Azure CLI**: Set up your Azure CLI with the necessary credentials.
 3. **Initialize Terraform**: Run `terraform init` to initialize the project.
 4. **Apply Configuration**: Run `terraform apply` to provision the resources.
 
 ## Conclusion
 
-This project demonstrates the use of Terraform to provision a static website on AWS, leveraging various AWS services to achieve a robust and scalable solution. It showcases my ability to use infrastructure as code to manage and deploy cloud resources efficiently.
+This project demonstrates the use of Terraform to provision a static website on Azure, leveraging various Azure services to achieve a robust and scalable solution. It showcases my ability to use infrastructure as code to manage and deploy cloud resources efficiently.
 
 Feel free to explore the code and adapt it to your own needs. If you have any questions or suggestions, please feel free to reach out.
 
 ---
-
 
 **Author**: Alfredo Costa Oliveira Junior
 
